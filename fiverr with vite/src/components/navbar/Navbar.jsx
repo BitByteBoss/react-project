@@ -18,6 +18,11 @@ const navbar = () => {
           <button>Sign in</button>
         </div>
       </div>
+      <hr />
+      <div className='menu'>
+        <span>Test</span>
+        <span>Test 2</span>
+      </div>
     </div>
   )
 }

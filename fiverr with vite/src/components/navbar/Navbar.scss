@@ -1,9 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar{
 display: flex;
 flex-direction: column;
 justify-content: center;
-background-color: #013914;
-color: white;
+flex-direction: row;
+align-items: center; 
+// background-color: #013914;
+color: black;
+transition: all 0.5s ease;
+position: sticky;
+
+
+  &.active{
+    background-color: white;
+    color: black;
+  }
 
   .container{
     // width: 1400px;
@@ -29,9 +45,7 @@ color: white;
       padding-right: 20px;
       font-weight: 500;
       font-family: "Montserrat", sans-serif;
-      span{
-
-      }
+      
 
       button{
         color: white;
@@ -66,7 +80,139 @@ color: white;
        
       }
     }
+  }
+
+  @media (max-width: 600px) {
+    .navbar{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: black;
+      transition: all 0.5s ease;
+      position: sticky;
+      
+
+      .hamburger{
+        display: flex;
+        padding: 20px;
+        cursor: pointer;
+        color: rgb(88, 88, 88);
+        font-size: 24px;
+      }
 
 
+      .container{
+        .logo{
+          display: flex;
+          justify-content: center;
+          font-size: 30px;
+          
+        }
+        .links{
+          display: none;
+        }
+      }
 
-}
+      .signIN{
+
+        .SignInBtn{
+         display: none;
+        }
+
+          .JoinBtn{
+          color: rgb(126, 126, 126);
+          padding: 10px 20px;
+          cursor: pointer;
+          background-color: transparent;
+          border: none;
+          font-weight: 600;
+          transition: all 0.5s ease;  
+          font-size: 17px;
+
+          &:hover{
+            color: rgb(187, 187, 187);
+          }
+      }
+      }
+    }
+  }
+
+  @media ((min-width: 600px) and (max-width: 900px)) {
+    .navbar{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      // background-color: #013914;
+      color: black;
+      transition: all 0.5s ease;
+      position: sticky;
+      flex: 1fr 1fr 2fr;
+
+
+      .hamburger{
+        display: flex;
+        padding: 18px;
+        justify-content: flex-start;
+        cursor: pointer;
+        color: rgb(88, 88, 88);
+        font-size: 24px;
+      }
+
+      .container{
+        .logo{
+          display: flex;
+          justify-content: center;
+          font-size: 30px;
+          
+        }
+        .links{
+          display: none;
+        }
+      }
+
+      .signIN{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 25px;
+
+        .SignInBtn{
+          color: rgb(126, 126, 126);
+          padding: 10px 20px;
+          cursor: pointer;
+          background-color: transparent;
+          border: none;
+          font-weight: 600;
+          transition: all 0.5s ease;  
+          font-size: 17px;
+
+          &:hover{
+            color: #1dbf73;
+          }
+        }
+
+          .JoinBtn{
+          color: #1dbf73;
+          padding: 10px 20px;
+          cursor: pointer;
+          background-color: transparent;
+          font-weight: 600;
+          transition: all 0.5s ease;  
+          border-radius: 5px;
+          border: 1px solid #1dbf73;
+          font-size: 13px;
+
+          &:hover{
+            color: white;
+            background-color: #1dbf73;
+          }
+      }
+      }
+    }
+
+    
+    
+    
+  }

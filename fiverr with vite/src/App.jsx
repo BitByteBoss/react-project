@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Featured from "./components/featured/Featured";
 import Services from "./components/services/Services";
-
+import Aboutus from "./components/aboutUs/Aboutus";
 
 function App() {
 
@@ -19,6 +19,7 @@ function App() {
         <Navbar />
         <Featured />
         <Services />
+        <Aboutus />
         <Footer/>
       </div>
     )

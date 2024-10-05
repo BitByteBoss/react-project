@@ -42,6 +42,8 @@ const navbar = () => {
           <span>English</span>
           {/* <span>Sign in</span> */}
           <span>Become a seller</span>
+          <button className='linkSignIn'>Sign in</button>
+          <button className='linkJoin'>Join</button>
         </div>
       </div>
       <div className='signIN'>

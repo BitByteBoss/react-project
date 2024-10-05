@@ -8,6 +8,7 @@ import {
   Outlet
 } from "react-router-dom";
 import Featured from "./components/featured/Featured";
+import Services from "./components/services/Services";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <div className="app">
         <Navbar />
         <Featured />
+        <Services />
         <Footer/>
       </div>
     )

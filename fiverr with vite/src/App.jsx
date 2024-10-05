@@ -7,6 +7,7 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
+import Featured from "./components/featured/Featured";
 
 
 function App() {
@@ -15,8 +16,7 @@ function App() {
     return (
       <div className="app">
         <Navbar />
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloremque nulla iusto repellat exercitationem, enim quo minima recusandae nam aliquam eius quae reiciendis quaerat. Quis ab dolorem nesciunt exercitationem quibusdam?</h1>
-        <Outlet />
+        <Featured />
         <Footer/>
       </div>
     )

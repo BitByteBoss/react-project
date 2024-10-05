@@ -50,16 +50,9 @@ const navbar = () => {
         <button className='SignInBtn'>Sign in</button>
         <button className='JoinBtn'>Join</button>
       </div>
-      {active &&
-      <> 
-        <hr />
-        <div className='menu'>
-          <span>Test</span>
-          <span>Test 2</span>
-        </div>
-      </>
-      }
+      
     </div>
+    
   )
 }
 
